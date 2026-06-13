@@ -2,11 +2,14 @@
   "name": "patina",
   "version": "0.1.0",
   "private": true,
+  
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"no tests yet\" && exit 0"
   },
   "dependencies": {
     "next": "16.2.9",
