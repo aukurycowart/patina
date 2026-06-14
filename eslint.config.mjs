@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    //prototype is archival reference only - not held to project lint standards.
+    "prototype/**",
   ]),
 ]);
 
