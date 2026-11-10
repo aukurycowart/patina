@@ -1,0 +1,16 @@
+name: patina
+
+services:
+  db: 
+    image: postgres:17
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-patina}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-patina}
+      POSTGRES_DB: ${POSTGRES_DB:-patina}
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
